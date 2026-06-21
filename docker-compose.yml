@@ -1,0 +1,26 @@
+version: '3.8'
+
+services:
+  backend:
+    build: .
+    container_name: cloudflare_tunnel_backend
+    restart: unless-stopped
+    env_file:
+      - .env
+    environment:
+      # Override the database URL to use the persistent volume path in the container
+      - DATABASE_URL=sqlite+aiosqlite:///app/data/tunnels.db
+      - APP_PORT=${APP_PORT:-1231}
+    ports:
+      - "${APP_PORT:-1231}:${APP_PORT:-1231}"
+    volumes:
+      # Persist the database
+      - ./data:/app/data
+      # Optional: mount local cloudflared logs if needed
+      # - ./logs:/app/logs
+    networks:
+      - tunnel_network
+
+networks:
+  tunnel_network:
+    driver: bridge
