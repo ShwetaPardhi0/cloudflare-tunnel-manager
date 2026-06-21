@@ -1,0 +1,31 @@
+Starting Cloudflare Tunnel Manager on port 1231...
+DEBUG: Active Event Loop: ProactorEventLoop
+INFO:     127.0.0.1:58296 - "GET /api/health HTTP/1.1" 200 OK
+[2026-06-19 15:18:10] [INFO] [backend]: Initiating tunnel request for local port 1231
+[2026-06-19 15:18:10] [INFO] [backend]: Executing command: C:\Program Files (x86)\cloudflared\cloudflared.EXE tunnel --url http://localhost:1231
+[2026-06-19 15:18:10] [INFO] [backend]: Spawned cloudflared process for tunnel 02dfc4a6-07ca-47a0-9ac4-95b16069982a (Mode: Async)
+[02dfc4a6-07ca-47a0-9ac4-95b16069982a][cloudflared]: 2026-06-19T09:48:10Z INF Thank you for trying Cloudflare Tunnel. Doing so, without a Cloudflare account, is a quick way to experiment and try it out. However, be aware that these account-less Tunnels have no uptime guarantee, are subject to the Cloudflare Online Services Terms of Use (https://www.cloudflare.com/website-terms/), and Cloudflare reserves the right to investigate your use of Tunnels for violations of such terms. If you intend to use Tunnels in production you should use a pre-created named tunnel by following: https://developers.cloudflare.com/cloudflare-one/connections/connect-apps
+[02dfc4a6-07ca-47a0-9ac4-95b16069982a][cloudflared]: 2026-06-19T09:48:10Z INF Requesting new quick Tunnel on trycloudflare.com...
+INFO:     127.0.0.1:58676 - "POST /api/tunnel HTTP/1.1" 200 OK
+[02dfc4a6-07ca-47a0-9ac4-95b16069982a][cloudflared]: 2026-06-19T09:48:16Z INF +--------------------------------------------------------------------------------------------+
+[02dfc4a6-07ca-47a0-9ac4-95b16069982a][cloudflared]: 2026-06-19T09:48:16Z INF |  Your quick Tunnel has been created! Visit it at (it may take some time to be reachable):  |
+[02dfc4a6-07ca-47a0-9ac4-95b16069982a][cloudflared]: 2026-06-19T09:48:16Z INF |  https://organic-getting-containers-africa.trycloudflare.com                               |
+[2026-06-19 15:18:16] [INFO] [backend]: Tunnel 02dfc4a6-07ca-47a0-9ac4-95b16069982a connected: https://organic-getting-containers-africa.trycloudflare.com
+[02dfc4a6-07ca-47a0-9ac4-95b16069982a][cloudflared]: 2026-06-19T09:48:16Z INF +--------------------------------------------------------------------------------------------+
+[02dfc4a6-07ca-47a0-9ac4-95b16069982a][cloudflared]: 2026-06-19T09:48:16Z INF Cannot determine default configuration path. No file [config.yml config.yaml] in [~/.cloudflared ~/.cloudflare-warp ~/cloudflare-warp]
+[02dfc4a6-07ca-47a0-9ac4-95b16069982a][cloudflared]: 2026-06-19T09:48:16Z INF Version 2025.8.1 (Checksum b5d598b00cc3a28cabc5812d9f762819334614bae452db4e7f23eefe7b081556)
+[02dfc4a6-07ca-47a0-9ac4-95b16069982a][cloudflared]: 2026-06-19T09:48:16Z INF GOOS: windows, GOVersion: go1.24.2, GoArch: amd64
+[02dfc4a6-07ca-47a0-9ac4-95b16069982a][cloudflared]: 2026-06-19T09:48:16Z INF Settings: map[ha-connections:1 protocol:quic url:http://localhost:1231]
+[02dfc4a6-07ca-47a0-9ac4-95b16069982a][cloudflared]: 2026-06-19T09:48:16Z INF cloudflared will not automatically update on Windows systems.
+[02dfc4a6-07ca-47a0-9ac4-95b16069982a][cloudflared]: 2026-06-19T09:48:16Z INF Generated Connector ID: 93756c8c-3b20-470a-9ab0-e0c1233600cf
+[02dfc4a6-07ca-47a0-9ac4-95b16069982a][cloudflared]: 2026-06-19T09:48:16Z INF Initial protocol quic
+[02dfc4a6-07ca-47a0-9ac4-95b16069982a][cloudflared]: 2026-06-19T09:48:16Z INF ICMP proxy will use 10.73.235.248 as source for IPv4
+[02dfc4a6-07ca-47a0-9ac4-95b16069982a][cloudflared]: 2026-06-19T09:48:16Z INF ICMP proxy will use 2401:4900:7c81:73b8:98f8:3ef7:89cf:f7ce in zone Wi-Fi as source for IPv6
+[02dfc4a6-07ca-47a0-9ac4-95b16069982a][cloudflared]: 2026-06-19T09:48:16Z ERR Cannot determine default origin certificate path. No file cert.pem in [~/.cloudflared ~/.cloudflare-warp ~/cloudflare-warp]. You need to specify the origin certificate path by specifying the origincert option in the configuration file, or set TUNNEL_ORIGIN_CERT environment variable originCertPath=
+[02dfc4a6-07ca-47a0-9ac4-95b16069982a][cloudflared]: 2026-06-19T09:48:16Z INF cloudflared does not support loading the system root certificate pool on Windows. Please use --origin-ca-pool <PATH> to specify the path to the certificate pool
+[02dfc4a6-07ca-47a0-9ac4-95b16069982a][cloudflared]: 2026-06-19T09:48:16Z INF ICMP proxy will use 10.73.235.248 as source for IPv4
+[02dfc4a6-07ca-47a0-9ac4-95b16069982a][cloudflared]: 2026-06-19T09:48:17Z INF Tunnel connection curve preferences: [X25519MLKEM768 CurveP256] connIndex=0 event=0 ip=198.41.192.77
+[02dfc4a6-07ca-47a0-9ac4-95b16069982a][cloudflared]: 2026-06-19T09:48:17Z INF ICMP proxy will use 2401:4900:7c81:73b8:98f8:3ef7:89cf:f7ce in zone Wi-Fi as source for IPv6
+[02dfc4a6-07ca-47a0-9ac4-95b16069982a][cloudflared]: 2026-06-19T09:48:17Z INF Starting metrics server on 127.0.0.1:20241/metrics
+[02dfc4a6-07ca-47a0-9ac4-95b16069982a][cloudflared]: 2026-06-19T09:48:18Z INF Registered tunnel connection connIndex=0 connection=1dd90e19-a253-405b-a476-142ecbb0f4ab event=0 ip=198.41.192.77 location=maa05 protocol=quic
+INFO:     127.0.0.1:58688 - "GET /api/status/02dfc4a6-07ca-47a0-9ac4-95b16069982a HTTP/1.1" 200 OK
